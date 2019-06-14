@@ -4,20 +4,19 @@ This is a template for generate a Spring Boot Webflux Project, build in a Gradle
 
 # Build Project
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:5.4.1-jdk11 gradle build`: Build the project using a Gradle Docker and generate the JAR file at build/libs/project.jar
+- `docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:5.4.1-jdk11 gradle build`: Build the project using a Gradle Docker and generate the JAR file at build/libs/project.jar
 
 # Run Project
 
-`docker-compose up -d`: Create and Start Docker Instances;
-`docker ps`: Check docker instances, there are one instance **spring-app** and other **spring-mongodb**;
-`http://localhost:8080/hello`: Test the Hello World!!!
+- `docker-compose up -d`: Create and Start Docker Instances;
+- `docker ps`: Check docker instances, there are one instance **spring-app** and other **spring-mongodb**;
+- `http://localhost:8080/hello`: Test the Hello World!!!
 
 # Rebuild the Project after changes
 
-`docker rm spring-app`: Delete the App Docker Instance;
-`docker rmi demo_springboot`: Delete The App Docker Image;
-`docker-compose up -d`: Recreate Dockers and run the project.
-
+- `docker rm spring-app`: Delete the App Docker Instance;
+- `docker rmi demo_springboot`: Delete The App Docker Image;
+- `docker-compose up -d`: Recreate Dockers and run the project.
 
 # Dockers
 
