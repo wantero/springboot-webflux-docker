@@ -16,7 +16,9 @@ This is a template for generate a Spring Boot Webflux Project, build in a Gradle
 
 - `docker rm spring-app`: Delete the App Docker Instance;
 - `docker rmi demo_springboot`: Delete The App Docker Image;
-- `docker-compose up -d`: Recreate Dockers and run the project.
+- `Build Project`;
+- `Run Project`.
+
 
 # Dockers
 
