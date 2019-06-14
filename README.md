@@ -13,9 +13,9 @@ This is a template for generate a Spring Boot Webflux Project, build in a Gradle
 - `http://localhost:8080/hello`: Test the Hello World!!!
 
 # Rebuild the Project after changes
-
+- `docker-compose stop`: Stop all Instances from docker-compose.yml file;
 - `docker rm spring-app`: Delete the App Docker Instance;
-- `docker rmi demo_springboot`: Delete The App Docker Image;
+- `docker rmi springboot-webflux-docker_springboot`: Delete The App Docker Image;
 - `Build Project`;
 - `Run Project`.
 
