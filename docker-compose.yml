@@ -1,0 +1,26 @@
+version: "2"
+services:
+  springboot:
+    build: .
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/demo
+    container_name: spring-app
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    networks:
+      - myNetwork
+  mongo:
+    image: mongo
+    container_name: spring-mongodb
+    ports:
+      - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+    networks:
+      - myNetwork
+networks:
+  myNetwork:
+    driver: bridge      
